@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-title>Add Item</ion-title>
+    <ion-buttons slot="end"> 
+      <ion-button (click)="close()" fill="clear"> 
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating color="secondary">Título</ion-label>
+      <ion-input type="text" [(ngModel)]="title"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating color="secondary">Descrição</ion-label>
+      <ion-input type="text" [(ngModel)]="description"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-button expand="full" color="secondary" (click)="saveItem()">Salvar</ion-button>
+
+  <div *ngIf="errorMessage" class="error-message">
+    <div class="error-container">
+      <ion-icon name="alert-circle-outline" class="error-icon"></ion-icon>
+      <div class="error-text">{{ errorMessage }}</div>
+    </div>
+  </div>
+</ion-content>

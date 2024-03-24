@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title>
+      EDITAR ITEM
+    </ion-title>
+    <ion-buttons slot="end"> 
+      <ion-button color="light" (click)="editItem()">Salvar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label floating color="secondary">Título</ion-label>
+    <ion-input [(ngModel)]="originalItem.title" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating color="secondary">Descrição</ion-label>
+    <ion-input [(ngModel)]="originalItem.description"></ion-input>
+  </ion-item>
+</ion-content>
