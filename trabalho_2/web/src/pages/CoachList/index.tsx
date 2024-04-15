@@ -1,4 +1,3 @@
-// CoachList.tsx
 import React, { FormEvent, useState } from 'react';
 import PageHeader from '../../components/PageHeader';
 import CoachItem, { Coach } from '../../components/CoachItem';
@@ -25,21 +24,17 @@ function CoachList() {
         },
       });
 
-      // Agrupando os coaches pelo id e disciplina
       const groupedCoaches: { [key: string]: Coach } = {};
       response.data.forEach((coachData: Coach) => {
         const key = `${coachData.id}_${coachData.subject}`;
         if (!groupedCoaches[key]) {
           groupedCoaches[key] = { ...coachData, week_days: [], listFrom: [], listTo: [] };
         }
-        // Adicionando o valor de week_day ao array week_days do coach agrupado
         groupedCoaches[key].week_days.push(coachData.week_day);
-        // Adicionando os valores de times ao array times do coach agrupado
         groupedCoaches[key].listFrom.push(coachData.from);
         groupedCoaches[key].listTo.push(coachData.to);
       });
 
-      // Convertendo o objeto de grupos em um array
       const coachesArray = Object.values(groupedCoaches);
 
       setCoaches(coachesArray);
