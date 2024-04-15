@@ -21,10 +21,11 @@ function StudyTabs() {
           flex: 0,
           width: 20,
           height: 20,
+          margin: 15
         },
         tabBarLabelStyle: {
           fontSize: 13,
-          marginLeft: 16,
+          marginBottom: 10
         },
         tabBarInactiveBackgroundColor: '#fafafc',
         tabBarActiveBackgroundColor: '#ebebf5',
@@ -37,7 +38,7 @@ function StudyTabs() {
         component={CoachList} 
         options={{
           tabBarLabel: 'Coaches',
-          tabBarIcon: ({ color, size, focused }) => (
+          tabBarIcon: ({ color, focused }) => (
             <Ionicons name="easel-outline" size={24} color={focused ? '#8257e5' : color} />
           ),
         }}
@@ -47,7 +48,7 @@ function StudyTabs() {
         component={Favorites} 
         options={{
           tabBarLabel: 'Favoritos',
-          tabBarIcon: ({ color, size, focused }) => (
+          tabBarIcon: ({ color, focused }) => (
             <Feather name="heart" size={22} color={focused ? '#8257e5' : color}/>
           ),
         }}
