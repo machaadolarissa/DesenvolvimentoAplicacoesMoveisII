@@ -90,7 +90,7 @@
 
 .coach-item footer p strong.time {
   margin-left: 1.6rem;
-  color: var(--color-primary); /* Define a cor para as informações */
+  color: var(--color-primary);
 }
 
 .coach-item footer a {

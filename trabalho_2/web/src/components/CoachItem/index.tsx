@@ -1,4 +1,3 @@
-// CoachItem.tsx
 import React from 'react';
 import api from '../../services/api';
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
