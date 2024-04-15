@@ -28,13 +28,11 @@ const styles = StyleSheet.create({
   },
 
   name: {
-    fontFamily: 'Archivo_700Bold',
     color: '#32364d',
     fontSize: 20,
   },
 
   subject: {
-    fontFamily: 'Poppins_400Regular',
     color: '#6a6180',
     fontSize: 12,
     marginTop: 4,
@@ -42,7 +40,6 @@ const styles = StyleSheet.create({
 
   bio: {
     marginHorizontal: 24,
-    fontFamily: 'Poppins_400Regular',
     fontSize: 14,
     lineHeight: 24,
     color: '#6a6180',
@@ -56,13 +53,11 @@ const styles = StyleSheet.create({
   },
 
   price: {
-    fontFamily: 'Poppins_400Regular',
     color: '#6a6180',
     fontSize: 14,
   },
 
   priceValue: {
-    fontFamily: 'Archivo_700Bold',
     color: '#8257e5',
     fontSize: 16,
   },
@@ -99,7 +94,6 @@ const styles = StyleSheet.create({
 
   contactButtonText: {
     color: '#fff',
-    fontFamily: 'Archivo_700Bold',
     fontSize: 16,
     marginLeft: 16,
   },

@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    fontFamily: 'Archivo_700Bold',
     color: '#fff',
     fontSize: 24,
     lineHeight: 32,

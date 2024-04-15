@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
 
   label: {
     color: '#d4c2ff',
-    fontFamily: 'Poppins_400Regular',
   },
 
   inputGroup: {
@@ -49,7 +48,6 @@ const styles = StyleSheet.create({
 
   submitButtonText: {
     color: '#fff',
-    fontFamily: 'Archivo_700Bold',
     fontSize: 16,
   },
   

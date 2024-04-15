@@ -11,31 +11,25 @@ const { Navigator, Screen } = createBottomTabNavigator();
 function StudyTabs() {
   return (
     <Navigator
-      tabBarOptions={{
-        style: {
+      screenOptions={{
+        tabBarStyle: {
           elevation: 0,
           shadowOpacity: 0,
           height: 100,
         },
-        tabStyle: {
-          flexDirection: 'row',
-          alignItems: 'center',
-          justifyContent: 'center',
-        },
-        iconStyle: {
+        tabBarIconStyle: {
           flex: 0,
           width: 20,
           height: 20,
         },
-        labelStyle: {
-          fontFamily: 'Archivo_700Bold',
+        tabBarLabelStyle: {
           fontSize: 13,
           marginLeft: 16,
         },
-        inactiveBackgroundColor: '#fafafc',
-        activeBackgroundColor: '#ebebf5',
-        inactiveTintColor: '#c1bcbc',
-        activeTintColor: '#32264d',
+        tabBarInactiveBackgroundColor: '#fafafc',
+        tabBarActiveBackgroundColor: '#ebebf5',
+        tabBarInactiveTintColor: '#c1bcbc',
+        tabBarActiveTintColor: '#32264d',
       }}
     >
       <Screen 
@@ -44,7 +38,8 @@ function StudyTabs() {
         options={{
           tabBarLabel: 'Coaches',
           tabBarIcon: ({ color, size, focused }) => (
-          <Ionicons name="easel-outline" size={24} color={focused ? '#8257e5' : color} />          ),
+            <Ionicons name="easel-outline" size={24} color={focused ? '#8257e5' : color} />
+          ),
         }}
       />
       <Screen 

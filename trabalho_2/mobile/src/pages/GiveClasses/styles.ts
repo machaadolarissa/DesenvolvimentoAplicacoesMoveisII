@@ -14,7 +14,6 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    fontFamily: 'Archivo_700Bold',
     color: '#fff',
     fontSize: 32,
     lineHeight: 37,
@@ -26,7 +25,6 @@ const styles = StyleSheet.create({
     color: '#d4c2ff',
     fontSize: 16,
     lineHeight: 26,
-    fontFamily: 'Poppins_400Regular',
     maxWidth: 240,
   },
 
@@ -42,7 +40,6 @@ const styles = StyleSheet.create({
   okButtonText: {
     color: '#fff',
     fontSize: 16,
-    fontFamily: 'Archivo_700Bold',
   },
 
 });
